@@ -31,7 +31,7 @@
                 <div>
                     <h3>Projet 2</h3>
                     <p>Description du projet 2.</p>
-                    <a href="<?php echo get_theme_file_uri() . '/koukaki.php'; ?> ">Détails</a>
+                    <a href="<?php echo get_theme_file_uri() . '/curriculumvitae.php'; ?> ">Détails</a>
                 </div>
             </div>
             <!-- Ajoutez d'autres projets ici -->

@@ -86,3 +86,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Ajoutez ce script pour gérer l'animation lorsque l'utilisateur écrit dans l'input
+document.getElementById('input').addEventListener('input', function () {
+    this.setAttribute('style', 'width:' + ((this.value.length + 1) * 8) + 'px');
+});
+
+
+
+
+
+
+
+
+
+
+

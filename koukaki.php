@@ -47,7 +47,7 @@
         </div>
 
         <div class="back-to-dashboard">
-            <a href="home.php">Retour au Tableau de Bord</a>
+            <a href="index.html">Retour au Tableau de Bord</a>
         </div>
     </div>
 

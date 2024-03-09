@@ -11,10 +11,11 @@
 </head>
 
 <body>
-	<div class="logo-container">
-        <img src="votre-logo.png" alt="Votre Logo">
-    </div>
+	
     <div class="terminal">
+    <div class="logo-container">
+        <img src="<?php echo get_theme_file_uri() . '/assets/images/Martial Mertzig - Portfolio - Logo_Plan de travail 1_Plan de travail 1_Plan de travail 1.png'; ?> " alt="Votre Logo">
+    </div>
         <div class="background"></div>
         <pre id="output">Bienvenue dans le Terminal</pre>
         <input type="text" id="input" autofocus>

@@ -1,4 +1,7 @@
 body {
+
+    cursor: url('lien-vers-votre-image-futuriste.png') 32 32, auto;
+    
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
@@ -20,14 +23,14 @@ body {
 }
 
 .terminal {
-    width: 80%;
+    width: 100%;
     max-width: 600px;
     background-color: #111;
     border: 1px solid #333;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     padding: 10px;
     overflow: hidden;
-    margin: auto; /* Ajout de cette ligne pour centrer le terminal */
+    margin: auto;
 }
 
 #output {
@@ -148,9 +151,9 @@ a:hover {
     color: #2078b4;
 }
 
-.animated-schema {
-    /* Ajoutez ici des styles pour votre schéma animé */
-}
+/*.animated-schema {
+    /* Ajoutez ici des styles pour votre schéma animé
+}*/
 
 .contact-form {
     background-color: #555;
@@ -358,6 +361,82 @@ h2 {
 }
 
 /* ... (Autres styles existants) */
+
+/* ... (Styles existants) */
+
+.cv-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.cv-header,
+.cv-details,
+.cv-experience,
+.cv-education,
+.cv-skills,
+.cv-contact {
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cv-header:hover,
+.cv-details:hover,
+.cv-experience:hover,
+.cv-education:hover,
+.cv-skills:hover,
+.cv-contact:hover {
+    transform: scale(1.05);
+}
+
+h2,
+h3 {
+    color: #3498db;
+}
+
+.cv-header h1 {
+    color: #fff;
+}
+
+.cv-header p,
+.cv-details p,
+.cv-experience p,
+.cv-education p,
+.cv-contact p {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.cv-education-item h3 {
+    margin-bottom: 5px;
+}
+
+#input {
+    position: relative;
+}
+
+#input::after {
+    content: "|";
+    display: inline-block;
+    width: 8px; /* Largeur de la barre verticale */
+    height: 2px;
+    background-color: #fff; /* Couleur blanche */
+    position: absolute;
+    animation: blink-caret 0.8s infinite;
+}
+
+@keyframes blink-caret {
+    50% {
+        opacity: 0;
+    }
+}
+
+
 
 
 
