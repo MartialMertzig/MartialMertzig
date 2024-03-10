@@ -1,50 +1,61 @@
 /* Corps du site */
 
 body {
-    cursor: url('lien-vers-votre-image-futuriste.png') 32 32, auto;
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #0c0c0c;
     color: #fff;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Niveaux de titre */
+/************** Niveaux de titre **************/
 
 h2 {
     font-size: 25px;
-    color: #6eab25;
+    color: #40df8d;
     font-family: 'Play', sans-serif;
 }
 
 h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
     font-size: 15px;
-    color: #6eab25;
+    color: #40df8d;
     font-family: 'Play', sans-serif;
 }
 
 p {
     font-size: 15px;
-    color: #6eab25;
+    color: #40df8d;
     font-family: 'Play', sans-serif;
     margin-top: 10px;
 }
 
 a {
     font-size: 15px;
-    color: #6eab25;
+    color: #40df8d;
     font-family: 'Play', sans-serif;
     margin-top: 10px;
     text-decoration: none;
 }
 
-/* Logo */
+/************** Logo **************/
+
+.logo-container-terminal {
+    text-align: center;
+    padding: 35px 20px 20px 20px;
+}
 
 .logo-container {
     text-align: center;
-    padding: 20px 20px 20px 20px;
+    /* margin: 30px 0px 0px 0px;*/
+} 
+
+.logo-container-projet {
+    text-align: center;
+    margin: 30px 0px 0px 0px;
 }
 
 .logo-container img {
@@ -52,14 +63,14 @@ a {
     height: auto;
 }
 
-/* Terminal de commande */
+/************** Terminal de commande **************/
 
 .terminal {
     width: 100%;
     max-width: 600px;
     display: flex;
-    background-color: black;
-    border: 1px solid #6eab25;
+    background-color: #1f1f1f;
+    border: 1px solid #1f1f1f;
     /* border-radius: 5px; */
     padding: 10px;
     overflow: hidden;
@@ -76,15 +87,15 @@ a {
     overflow-x: auto;
     text-align: center;
     font-size: 15px;
-    color: #6eab25;
+    color: #40df8d;
     font-family: 'Play', sans-serif;
 }
 
 #input {
     width: calc(80% - 20px);
     padding: 5px;
-    background-color: black;
-    color: #6eab25;
+    background-color: #0c0c0c;
+    color: #40df8d;
     border: none;
     outline: none;
     font-size: 15px;
@@ -103,7 +114,7 @@ a {
     display: inline-block;
     width: 8px; /* Largeur de la barre verticale */
     height: 8px;
-    background-color: #fff; /* Couleur blanche */
+    background-color: #40df8d; /* Couleur blanche */
     position: absolute;
     animation: blink-caret 0.8s infinite;
 }
@@ -114,7 +125,7 @@ a {
     }
 }
 
-/* Dashboard */
+/************** Tableau de bord **************/
 
 .dashboard {
     display: grid;
@@ -128,11 +139,11 @@ a {
 .faq,
 .site-title {
     /* background-color: #333; */
-    border: 1px solid #6eab25;
+    border: 1px solid #40df8d;
     border-radius: 0px;
     padding: 30px;
-    margin: 20px 0;
-    color: #6eab25;
+    /* margin: 20px 0; */
+    color: #40df8d;
     /* transition: transform 0.3s ease-in-out;*/
 }
 
@@ -142,32 +153,41 @@ a {
     color: white;
 }
 
-/* Ajoutez les styles pour les titres des sections */
+/*** Titres des sections ***/
+
 .about h2,
 .faq h2,
 .site-title h2 {
     font-size: 25px;
-    color: #6eab25;
+    color: #40df8d;
     font-family: 'Play', sans-serif;
 }
 
-/* Ajoutez les styles pour le contenu des sections */
+/*** Contenu des sections ***/
+
 .about p,
 .faq p,
 .site-title p {
     font-size: 15px;
-    color: #6eab25;
+    color: #40df8d;
     font-family: 'Play', sans-serif;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .dashboard-item {
-    /* background-color: #333; */
-    border: 1px solid #6eab25;
+    background-color: #1f1f1f;
+    border: 1px solid #1f1f1f;
     border-radius: 0px;
-    padding: 30px;
-    margin: 20px 0;
-    /* transition: transform 0.3s ease-in-out;*/
+    padding: 15px 30px 15px 30px;
+    /* margin: 20px 0; */
+    /* transition: transform 0.3s ease-in-out; */
+}
+
+.titre-du-site {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
 }
 
 /* Effet hover des cellules*/
@@ -177,10 +197,16 @@ a {
 }*/
 
 .project {
-    border: 1px solid #6eab25;
+    border: 1px solid #40df8d;
     padding: 20px;
     margin: 20px 0;
 }
+
+.project:hover {
+    background-color: #40df8d;
+    color: #0c0c0c;
+}
+
 
 /* Effet hover sur les cellules projet /*
 
@@ -194,63 +220,58 @@ a {
 
 .contact-form {
     /* background-color: #333; */
-    border: 1px solid #6eab25;
+    border: 1px solid #1f1f1f;
     border-radius: 0px;
-    padding: 30px;
-    margin: 20px 0;
-    color: #6eab25;
+    padding: 15px 30px 15px 30px;
+    color: #40df8d;
     /* transition: transform 0.3s ease-in-out;*/
 }
 
-/* Ajoutez les styles pour les compétences dans la section "skills" */
+/************** Section Compétences **************/
+
 .skill-card {
-    border: 1px solid #6eab25;
+    border: 1px solid #40df8d;
+    display: flex;
     padding: 20px;
     margin: 20px 0;
     text-align: center;
-    color: #6eab25;
+    color: #40df8d;
     transition: transform 0.3s ease-in-out;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
 
 .skill-card:hover {
-    background-color: #6eab25;
-    color: black;
+    background-color: #40df8d;
+    color: #0c0c0c;
+} 
+
+.skill-card:hover div{
+    color: #0c0c0c;
 } 
 
 .skill-number {
     font-size: 25px;
-    color: #6eab25;
-    font-family: 'Play', sans-serif;
-}
-
-.skill-number:hover {
-    background-color: black;
-    font-size: 25px;
-    color: #6eab25;
+    color: #40df8d;
     font-family: 'Play', sans-serif;
 }
 
 .skill-name {
     font-size: 25px;
-    color: #6eab25;
+    color: #40df8d;
     font-family: 'Play', sans-serif;
-    margin-top: 10px;
-}
-
-.skill-name:hover {
-    background-color: black;
-    font-size: 25px;
-    color: #6eab25;
-    font-family: 'Play', sans-serif;
+    /* margin-top: 10px; */
 }
 
 /************** Section FAQ **************/
 
 .faq .faq-item {
-    border: 1px solid #6eab25;
+    border: 1px solid #40df8d;
     padding: 20px;
     margin: 20px 0;
-    color: #6eab25;
+    color: #40df8d;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     overflow: hidden;
@@ -262,8 +283,7 @@ a {
 } */
 
 .faq .faq-item h3 {
-    color: #6eab25;
-    margin-bottom: 15px;
+    color: #40df8d;
 }
 
 .faq .faq-item .answer {
@@ -278,68 +298,87 @@ a {
 
 .faq .faq-item .answer p {
     font-size: 15px;
-    color: #6eab25;
+    color: #40df8d;
     font-family: 'Play', sans-serif;
     margin-top: 10px;
 }
 
-/* ... (Styles existants) */
+/* Bouton retour au tableau de bord */
 
 .back-to-dashboard {
-    background-color: #333;
-    border: 1px solid #555;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px 0;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
+    background-color: #1f1f1f;
+    border: 1px solid #1f1f1f;
+    display: flex;
+    border-radius: 0px;
+    height: 50px;
+    /* padding: 15px 30px 15px 30px; */
+    margin: 0px 0;
+    /* transition: transform 0.3s ease-in-out; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .back-to-dashboard:hover {
-    transform: scale(1.05);
+    background-color: #40df8d;
 }
 
 .back-to-dashboard a {
-    color: #3498db;
+    color: #40df8d;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    font-size: 15px;
+    color: #40df8d;
+    font-family: 'Play', sans-serif;
+    margin-top: 10px;
 }
 
-.back-to-dashboard a:hover {
-    color: #2078b4;
+.back-to-dashboard:hover a{
+    color: #0c0c0c;
 }
 
-/************** Page de présentation des projets (template-part ?) **************/
+/************** Présentation des projets (template-part ?) **************/
 
 .project-page {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px;
+    flex-grow: 1;
+}
+
+.Logo-outils {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
     gap: 20px;
-    padding: 20px;
 }
 
 .project-details,
 .project-tech,
 .project-screenshots,
 .project-links {
-    background-color: #333;
-    border: 1px solid #555;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px 0;
-    transition: transform 0.3s ease-in-out;
+    background-color: #1f1f1f;
+    border: 1px solid #1f1f1f;
+    border-radius: 0px;
+    padding: 15px 30px 15px 30px;
+    /* margin: 20px 0; */
+    /* transition: transform 0.3s ease-in-out; */
 }
 
-.project-details:hover,
+/* .project-details:hover,
 .project-tech:hover,
 .project-screenshots:hover,
 .project-links:hover {
     transform: scale(1.05);
-}
+} */
 
 .project-details p {
-    color: #fff;
+    font-size: 15px;
+    color: #40df8d;
+    font-family: 'Play', sans-serif;
+    margin-top: 10px;
 }
 
 .project-tech ul {
@@ -355,54 +394,68 @@ a {
 .project-screenshots {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .screenshot {
     flex: 1 0 calc(33.33% - 20px);
-    margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
 }
 
-.screenshot img {
-    width: 100%;
-    border-radius: 8px;
+/*.screenshot img {
+    /* width: 100%; */
+    /* border-radius: 8px; 
 }
+*/
 
 .project-links a {
     display: block;
     margin-top: 10px;
     text-decoration: none;
-    color: #3498db;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    font-size: 15px;
+    color: #40df8d;
+    font-family: 'Play', sans-serif;
+    margin-top: 10px;
 }
 
 .project-links a:hover {
-    color: #2078b4;
+    background-color: #40df8d;
+    color: #0c0c0c;
 }
 
 .back-to-dashboard {
-    background-color: #333;
-    border: 1px solid #555;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px 0;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
+    background-color: #1f1f1f;
+    border: 1px solid #1f1f1f;
+    display: flex;
+    border-radius: 0px;
+    padding: 15px 30px 15px 30px;
+    /* margin: 20px 0; */
+    /* transition: transform 0.3s ease-in-out; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .back-to-dashboard:hover {
-    transform: scale(1.05);
+    background-color: #40df8d;
 }
 
 .back-to-dashboard a {
-    color: #3498db;
+    color: #40df8d;
     text-decoration: none;
+    margin: 0px;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
 }
 
 .back-to-dashboard a:hover {
-    color: #2078b4;
+    color: #0c0c0c;
 }
 
 /************** Curriculum Vitae **************/

@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { name: 'HTML', number: 90 },
         { name: 'CSS', number: 85 },
         { name: 'JavaScript', number: 80 },
+        { name: 'JavaScript', number: 80 },
         // Ajoutez d'autres compétences ici
     ];
 
@@ -90,6 +91,8 @@ document.addEventListener('DOMContentLoaded', function () {
 document.getElementById('input').addEventListener('input', function () {
     this.setAttribute('style', 'width:' + ((this.value.length + 1) * 8) + 'px');
 });
+
+
 
 
 
