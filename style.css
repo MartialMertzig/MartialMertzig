@@ -7,3 +7,87 @@ Version: 1.0
 Tags: nathalie mota, photographie
 Text Domain: MartialMertzig
 */
+
+/*Utilisation des polices Google Font en local */
+
+/* Nebula */
+
+@font-face {
+    font-family: 'Nebula';
+    src: url('assets/fonts/Nebula-Regular.otf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700; 
+}
+
+/* Play */
+
+@font-face {
+    font-family: 'Play';
+    src: url('assets/fonts/Play-Bold.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: bold; 
+}
+
+/* Play */
+
+@font-face {
+    font-family: 'Play';
+    src: url('assets/fonts/Play-Regular.ttf') format("truetype");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700; 
+}
+
+/* Orbiton */
+
+@font-face {
+    font-family: 'Orbiton';
+    src: url('assets/fonts/Orbitron-Black.ttf') format("truetype");
+    font-display: swap;
+    font-style: italic;
+    font-weight: 700; 
+}
+
+@font-face {
+    font-family: 'Orbiton';
+    src: url('assets/fonts/Orbitron-Bold.ttf') format("truetype");
+    font-display: swap;
+    font-style: italic;
+    font-weight: 700; 
+}
+
+
+@font-face {
+    font-family: 'Orbiton';
+    src: url('assets/fonts/Orbitron-ExtraBold.ttf') format("truetype");
+    font-display: swap;
+    font-style: italic;
+    font-weight: 700; 
+}
+
+@font-face {
+    font-family: 'Orbiton';
+    src: url('assets/fonts/Orbitron-Medium.ttf') format("truetype");
+    font-display: swap;
+    font-style: italic;
+    font-weight: 700; 
+}
+
+
+@font-face {
+    font-family: 'Orbiton';
+    src: url('assets/fonts/Orbitron-Regular.ttf') format("truetype");
+    font-display: swap;
+    font-style: italic;
+    font-weight: 700; 
+}
+
+@font-face {
+    font-family: 'Orbiton';
+    src: url('assets/fonts/Orbitron-SemiBold.ttf') format("truetype");
+    font-display: swap;
+    font-style: italic;
+    font-weight: 700; 
+}

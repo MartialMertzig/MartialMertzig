@@ -11,10 +11,14 @@
 </head>
 
 <body>
-    <div class="logo-container">
-        <img src="votre-logo.png" alt="Votre Logo">
+<div class="logo-container">
+        <img src="<?php echo get_theme_file_uri() . '/assets/images/Logo-02.png'; ?> " alt="Votre Logo">
     </div>
     <div class="dashboard" id="sortable-container">
+    <div class="dashboard-item site-title">
+            <h2>Titre du Site</h2>
+            <p>description du site.</p>
+        </div>
         <div class="dashboard-item portfolio">
             <h2>Portfolio</h2>
             <div class="project">
@@ -44,16 +48,16 @@
             </div>
         </div>
 
+        <div class="dashboard-item about">
+            <h2>À Propos</h2>
+            <p> à propos</p>
+        </div>
+
         <div class="dashboard-item contact-form">
             <h2>Contact</h2>
             <form action="#" method="post">
                 <!-- Ajoutez ici votre formulaire de contact -->
             </form>
-        </div>
-
-        <div class="dashboard-item about">
-            <h2>À Propos</h2>
-            <p> à propos</p>
         </div>
 
         <div class="dashboard-item faq">
@@ -73,10 +77,7 @@
             <!-- Ajoutez d'autres questions et réponses ici -->
         </div>
 
-        <div class="dashboard-item site-title">
-            <h2>Titre du Site</h2>
-            <p>description du site.</p>
-        </div>
+        
     </div>
 
     <footer>

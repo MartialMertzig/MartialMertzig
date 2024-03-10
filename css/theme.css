@@ -1,20 +1,50 @@
-body {
+/* Corps du site */
 
+body {
     cursor: url('lien-vers-votre-image-futuriste.png') 32 32, auto;
-    
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a;
+    background-color: black;
     color: #fff;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+/* Niveaux de titre */
+
+h2 {
+    font-size: 25px;
+    color: #6eab25;
+    font-family: 'Play', sans-serif;
+}
+
+h3 {
+    font-size: 15px;
+    color: #6eab25;
+    font-family: 'Play', sans-serif;
+}
+
+p {
+    font-size: 15px;
+    color: #6eab25;
+    font-family: 'Play', sans-serif;
+    margin-top: 10px;
+}
+
+a {
+    font-size: 15px;
+    color: #6eab25;
+    font-family: 'Play', sans-serif;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+/* Logo */
+
 .logo-container {
     text-align: center;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .logo-container img {
@@ -22,201 +52,218 @@ body {
     height: auto;
 }
 
+/* Terminal de commande */
+
 .terminal {
     width: 100%;
     max-width: 600px;
-    background-color: #111;
-    border: 1px solid #333;
+    display: flex;
+    background-color: black;
+    border: 1px solid #6eab25;
     /* border-radius: 5px; */
     padding: 10px;
     overflow: hidden;
     margin: auto;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 #output {
-    margin: 0;
+   /* margin: 0; */
     white-space: pre-wrap;
     overflow-x: auto;
+    text-align: center;
+    font-size: 15px;
+    color: #6eab25;
+    font-family: 'Play', sans-serif;
 }
 
 #input {
-    width: calc(100% - 20px);
+    width: calc(80% - 20px);
     padding: 5px;
-    background-color: #000;
-    color: #fff;
+    background-color: black;
+    color: #6eab25;
     border: none;
     outline: none;
-    font-size: 14px;
+    font-size: 15px;
+    font-family: 'Play', sans-serif;
+    font-style: normal0;
+    font-weight: bold;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a;
-    color: #fff;
+#input {
+    position: relative;
+    margin-bottom: 20px;
 }
+
+#input::after {
+    content: "|";
+    display: inline-block;
+    width: 8px; /* Largeur de la barre verticale */
+    height: 8px;
+    background-color: #fff; /* Couleur blanche */
+    position: absolute;
+    animation: blink-caret 0.8s infinite;
+}
+
+@keyframes blink-caret {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Dashboard */
 
 .dashboard {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
+    gap: 30px;
+    padding: 30px;
     flex-grow: 1;
 }
 
-
-
-/* ... (Vos styles existants) */
-
-/* Ajoutez les styles pour les sections "about", "faq" et "site-title" */
 .about,
 .faq,
 .site-title {
-    background-color: #555;
-    border: 1px solid #777;
-    border-radius: 8px;
-    padding: 20px;
+    /* background-color: #333; */
+    border: 1px solid #6eab25;
+    border-radius: 0px;
+    padding: 30px;
     margin: 20px 0;
-    color: #fff;
-    transition: transform 0.3s ease-in-out;
+    color: #6eab25;
+    /* transition: transform 0.3s ease-in-out;*/
 }
 
 .about:hover,
 .faq:hover,
 .site-title:hover {
-    transform: scale(1.05);
+    color: white;
 }
 
 /* Ajoutez les styles pour les titres des sections */
 .about h2,
 .faq h2,
 .site-title h2 {
-    color: #3498db;
+    font-size: 25px;
+    color: #6eab25;
+    font-family: 'Play', sans-serif;
 }
 
 /* Ajoutez les styles pour le contenu des sections */
 .about p,
 .faq p,
 .site-title p {
-    font-size: 1.2em;
+    font-size: 15px;
+    color: #6eab25;
+    font-family: 'Play', sans-serif;
     margin-top: 10px;
 }
-
 
 .dashboard-item {
-    background-color: #333;
-    border: 1px solid #555;
-    border-radius: 8px;
-    padding: 20px;
+    /* background-color: #333; */
+    border: 1px solid #6eab25;
+    border-radius: 0px;
+    padding: 30px;
     margin: 20px 0;
-    transition: transform 0.3s ease-in-out;
+    /* transition: transform 0.3s ease-in-out;*/
 }
 
-.dashboard-item:hover {
-    transform: scale(1.05);
-}
+/* Effet hover des cellules*/
 
-h2 {
-    color: #3498db;
-}
+/*.dashboard-item:hover {
+    background-color: #6eab25;
+}*/
 
 .project {
-    background-color: #555;
-    border: 1px solid #777;
-    border-radius: 8px;
+    border: 1px solid #6eab25;
     padding: 20px;
     margin: 20px 0;
-    transition: transform 0.3s ease-in-out;
 }
 
-.project:hover {
+/* Effet hover sur les cellules projet /*
+
+/* .project:hover {
     transform: scale(1.05);
-}
-
-h3 {
-    color: #fff;
-}
-
-a {
-    display: block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #3498db;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
-
-a:hover {
-    color: #2078b4;
-}
+} */
 
 /*.animated-schema {
     /* Ajoutez ici des styles pour votre schéma animé
 }*/
 
 .contact-form {
-    background-color: #555;
-    border: 1px solid #777;
-    border-radius: 8px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
+    /* background-color: #333; */
+    border: 1px solid #6eab25;
+    border-radius: 0px;
+    padding: 30px;
+    margin: 20px 0;
+    color: #6eab25;
+    /* transition: transform 0.3s ease-in-out;*/
 }
 
 /* Ajoutez les styles pour les compétences dans la section "skills" */
 .skill-card {
-    background-color: #555;
-    border: 1px solid #777;
-    border-radius: 8px;
+    border: 1px solid #6eab25;
     padding: 20px;
     margin: 20px 0;
     text-align: center;
-    color: #fff;
+    color: #6eab25;
     transition: transform 0.3s ease-in-out;
 }
 
 .skill-card:hover {
-    transform: scale(1.05);
-}
+    background-color: #6eab25;
+    color: black;
+} 
 
 .skill-number {
-    font-size: 2em;
-    font-weight: bold;
-    color: #3498db;
+    font-size: 25px;
+    color: #6eab25;
+    font-family: 'Play', sans-serif;
+}
+
+.skill-number:hover {
+    background-color: black;
+    font-size: 25px;
+    color: #6eab25;
+    font-family: 'Play', sans-serif;
 }
 
 .skill-name {
-    font-size: 1.5em;
+    font-size: 25px;
+    color: #6eab25;
+    font-family: 'Play', sans-serif;
     margin-top: 10px;
 }
 
-/* ... (Vos styles existants) */
+.skill-name:hover {
+    background-color: black;
+    font-size: 25px;
+    color: #6eab25;
+    font-family: 'Play', sans-serif;
+}
 
-/* Ajoutez les styles pour la section "faq" */
+/************** Section FAQ **************/
+
 .faq .faq-item {
-    background-color: #555;
-    border: 1px solid #777;
-    border-radius: 8px;
+    border: 1px solid #6eab25;
     padding: 20px;
     margin: 20px 0;
-    color: #fff;
+    color: #6eab25;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     overflow: hidden;
 }
 
+/*
 .faq .faq-item:hover {
     transform: scale(1.05);
-}
+} */
 
 .faq .faq-item h3 {
-    color: #3498db;
-    margin-bottom: 10px;
+    color: #6eab25;
+    margin-bottom: 15px;
 }
 
 .faq .faq-item .answer {
@@ -226,12 +273,14 @@ footer {
 }
 
 .faq .faq-item.opened .answer {
-    max-height: 200px; /* ou ajustez la hauteur maximale souhaitée */
+    max-height: 200px;
 }
 
-/* Ajoutez les styles pour le contenu des réponses */
 .faq .faq-item .answer p {
-    font-size: 1.2em;
+    font-size: 15px;
+    color: #6eab25;
+    font-family: 'Play', sans-serif;
+    margin-top: 10px;
 }
 
 /* ... (Styles existants) */
@@ -261,7 +310,7 @@ footer {
     color: #2078b4;
 }
 
-/* ... (Styles existants) */
+/************** Page de présentation des projets (template-part ?) **************/
 
 .project-page {
     display: grid;
@@ -287,10 +336,6 @@ footer {
 .project-screenshots:hover,
 .project-links:hover {
     transform: scale(1.05);
-}
-
-h2 {
-    color: #3498db;
 }
 
 .project-details p {
@@ -360,9 +405,7 @@ h2 {
     color: #2078b4;
 }
 
-/* ... (Autres styles existants) */
-
-/* ... (Styles existants) */
+/************** Curriculum Vitae **************/
 
 .cv-page {
     display: grid;
@@ -394,11 +437,6 @@ h2 {
     transform: scale(1.05);
 }
 
-h2,
-h3 {
-    color: #3498db;
-}
-
 .cv-header h1 {
     color: #fff;
 }
@@ -416,27 +454,15 @@ h3 {
     margin-bottom: 5px;
 }
 
-#input {
-    position: relative;
+/************** Footer <?php include('footer.php'); ?> **************/
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+    color: #6eab25;
+    font-family: 'Play', sans-serif;
 }
-
-#input::after {
-    content: "|";
-    display: inline-block;
-    width: 8px; /* Largeur de la barre verticale */
-    height: 2px;
-    background-color: #fff; /* Couleur blanche */
-    position: absolute;
-    animation: blink-caret 0.8s infinite;
-}
-
-@keyframes blink-caret {
-    50% {
-        opacity: 0;
-    }
-}
-
-
 
 
 

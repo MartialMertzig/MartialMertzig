@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             window.location.href = 'index.html';
         } else {
             output.innerHTML += `<div>> ${command}</div>`;
-            output.innerHTML += '<div>Commande inconnue. Tapez "index" pour revenir à la page index.</div>';
+            output.innerHTML += '<div>Commande inconnue, tapez "index" pour ouvrir la page.</div>';
         }
 
         // Faites défiler automatiquement vers le bas pour afficher les nouvelles commandes
