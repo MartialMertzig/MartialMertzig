@@ -34,3 +34,16 @@ add_theme_support('custom-logo', array(
     'flex-height' => true,
     'flex-width'  => true,
 ));
+
+// Ouverture du type de contenu personnalisé "photographies" avec projet.php
+
+function custom_single_template($single) {
+    global $post;
+    if ($post->post_type === 'projets') {
+        return get_template_directory() . '/single-projet.php';
+    }
+    return $single;
+}
+
+add_filter('single_template', 'custom_single_template');
+

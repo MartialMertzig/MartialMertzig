@@ -3,39 +3,49 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #0c0c0c;
+    background-color: black;
     color: #fff;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 /************** Niveaux de titre **************/
 
+h1 {
+    font-size: 35px;
+    color: #6eab25;
+    font-family: 'Play', sans-serif;
+    font-style: normal;
+    font-weight: bold; 
+}
+
 h2 {
     font-size: 25px;
-    color: #40df8d;
+    color: #6eab25;
     font-family: 'Play', sans-serif;
+    font-style: normal;
+    font-weight: bold; 
 }
 
 h3 {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 15px;
-    color: #40df8d;
+    color: #6eab25;
     font-family: 'Play', sans-serif;
 }
 
 p {
     font-size: 15px;
-    color: #40df8d;
+    color: #6eab25;
     font-family: 'Play', sans-serif;
     margin-top: 10px;
 }
 
 a {
     font-size: 15px;
-    color: #40df8d;
+    color: #6eab25;
     font-family: 'Play', sans-serif;
     margin-top: 10px;
     text-decoration: none;
@@ -45,17 +55,17 @@ a {
 
 .logo-container-terminal {
     text-align: center;
-    padding: 35px 20px 20px 20px;
+    padding: 35px;
 }
 
 .logo-container {
     text-align: center;
-    /* margin: 30px 0px 0px 0px;*/
+    margin: 60px 0px 0px 0px;
 } 
 
 .logo-container-projet {
     text-align: center;
-    margin: 30px 0px 0px 0px;
+    margin: 60px 0px 0px 0px;
 }
 
 .logo-container img {
@@ -69,9 +79,9 @@ a {
     width: 100%;
     max-width: 600px;
     display: flex;
-    background-color: #1f1f1f;
-    border: 1px solid #1f1f1f;
-    /* border-radius: 5px; */
+    background-color: black;
+    /* border: 1px solid #1f1f1f; */
+    /*border-radius: 15px; */
     padding: 10px;
     overflow: hidden;
     margin: auto;
@@ -82,20 +92,21 @@ a {
 }
 
 #output {
-   /* margin: 0; */
+    /* margin: 0; */
     white-space: pre-wrap;
     overflow-x: auto;
     text-align: center;
     font-size: 15px;
-    color: #40df8d;
+    color: #6eab25;
     font-family: 'Play', sans-serif;
 }
 
 #input {
     width: calc(80% - 20px);
-    padding: 5px;
-    background-color: #0c0c0c;
-    color: #40df8d;
+    padding: 6px;
+    background-color: black;
+    /* border-radius: 25px; */
+    color: #6eab25;
     border: none;
     outline: none;
     font-size: 15px;
@@ -114,7 +125,7 @@ a {
     display: inline-block;
     width: 8px; /* Largeur de la barre verticale */
     height: 8px;
-    background-color: #40df8d; /* Couleur blanche */
+    background-color: black; /* Couleur blanche */
     position: absolute;
     animation: blink-caret 0.8s infinite;
 }
@@ -127,11 +138,18 @@ a {
 
 /************** Tableau de bord **************/
 
+.date-heure {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .dashboard {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 30px;
+    gap: 25px;
+    padding: 0px 35px 35px 35px;
     flex-grow: 1;
 }
 
@@ -139,12 +157,12 @@ a {
 .faq,
 .site-title {
     /* background-color: #333; */
-    border: 1px solid #40df8d;
+    /* border: 1px solid #000000; */
     border-radius: 0px;
     padding: 30px;
     /* margin: 20px 0; */
-    color: #40df8d;
-    /* transition: transform 0.3s ease-in-out;*/
+    color: #6eab25;
+    /* transition: transform 0.3s ease-in-out; */
 }
 
 .about:hover,
@@ -159,7 +177,7 @@ a {
 .faq h2,
 .site-title h2 {
     font-size: 25px;
-    color: #40df8d;
+    color: #6eab25;
     font-family: 'Play', sans-serif;
 }
 
@@ -169,15 +187,17 @@ a {
 .faq p,
 .site-title p {
     font-size: 15px;
-    color: #40df8d;
+    color: #6eab25;
     font-family: 'Play', sans-serif;
+    line-height: 22px;
+    text-align: justify;
     margin-top: 30px;
 }
 
 .dashboard-item {
-    background-color: #1f1f1f;
-    border: 1px solid #1f1f1f;
-    border-radius: 0px;
+    background-color: black;
+    border: 1px solid #6eab25; 
+    /* border-radius: 5px; */
     padding: 15px 30px 15px 30px;
     /* margin: 20px 0; */
     /* transition: transform 0.3s ease-in-out; */
@@ -197,14 +217,21 @@ a {
 }*/
 
 .project {
-    border: 1px solid #40df8d;
+    border: 1px solid #6eab25;
     padding: 20px;
     margin: 20px 0;
 }
 
-.project:hover {
-    background-color: #40df8d;
-    color: #0c0c0c;
+.project-pre:hover {
+    background-color: #6eab25;
+    color: #ffffff;
+}
+
+.nom_du_projet{
+    font-size: 15px;
+    color: #6eab25;
+    font-family: 'Play', sans-serif;
+    margin-top: 10px;
 }
 
 
@@ -220,22 +247,22 @@ a {
 
 .contact-form {
     /* background-color: #333; */
-    border: 1px solid #1f1f1f;
+    border: 1px solid #6eab25;
     border-radius: 0px;
     padding: 15px 30px 15px 30px;
-    color: #40df8d;
+    color: #6eab25;
     /* transition: transform 0.3s ease-in-out;*/
 }
 
 /************** Section Compétences **************/
 
 .skill-card {
-    border: 1px solid #40df8d;
+    border: 1px solid #6eab25;
     display: flex;
     padding: 20px;
     margin: 20px 0;
     text-align: center;
-    color: #40df8d;
+    color: #6eab25;
     transition: transform 0.3s ease-in-out;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -244,34 +271,41 @@ a {
 }
 
 .skill-card:hover {
-    background-color: #40df8d;
-    color: #0c0c0c;
+    background-color: #6eab25;
 } 
 
 .skill-card:hover div{
-    color: #0c0c0c;
+    color: #ffffff;
 } 
 
 .skill-number {
     font-size: 25px;
-    color: #40df8d;
+    color: #6eab25;
     font-family: 'Play', sans-serif;
+}
+
+.skill-number:hover {
+    background-color: #1d2820;
 }
 
 .skill-name {
     font-size: 25px;
-    color: #40df8d;
+    color: #6eab25;
     font-family: 'Play', sans-serif;
     /* margin-top: 10px; */
+}
+
+.skill-name:hover {
+    background-color: #6eab25;
 }
 
 /************** Section FAQ **************/
 
 .faq .faq-item {
-    border: 1px solid #40df8d;
+    border: 1px solid #6eab25;
     padding: 20px;
     margin: 20px 0;
-    color: #40df8d;
+    color: #6eab25;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     overflow: hidden;
@@ -283,7 +317,7 @@ a {
 } */
 
 .faq .faq-item h3 {
-    color: #40df8d;
+    color: #6eab25;
 }
 
 .faq .faq-item .answer {
@@ -298,7 +332,7 @@ a {
 
 .faq .faq-item .answer p {
     font-size: 15px;
-    color: #40df8d;
+    color: #6eab25;
     font-family: 'Play', sans-serif;
     margin-top: 10px;
 }
@@ -341,8 +375,8 @@ a {
 .project-page {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 30px;
+    gap: 25px;
+    padding: 0px 35px 35px 35px;
     flex-grow: 1;
 }
 
@@ -359,8 +393,8 @@ a {
 .project-tech,
 .project-screenshots,
 .project-links {
-    background-color: #1f1f1f;
-    border: 1px solid #1f1f1f;
+    background-color: black;
+    border: 1px solid #6eab25;
     border-radius: 0px;
     padding: 15px 30px 15px 30px;
     /* margin: 20px 0; */
@@ -376,7 +410,7 @@ a {
 
 .project-details p {
     font-size: 15px;
-    color: #40df8d;
+    color: #6eab25;
     font-family: 'Play', sans-serif;
     margin-top: 10px;
 }
@@ -420,19 +454,19 @@ a {
     margin-top: 10px;
     text-decoration: none;
     font-size: 15px;
-    color: #40df8d;
+    color: #6eab25;
     font-family: 'Play', sans-serif;
     margin-top: 10px;
 }
 
 .project-links a:hover {
-    background-color: #40df8d;
-    color: #0c0c0c;
+    background-color: #6eab25;
+    color: black;
 }
 
 .back-to-dashboard {
-    background-color: #1f1f1f;
-    border: 1px solid #1f1f1f;
+    background-color: black;
+    border: 1px solid #6eab25;
     display: flex;
     border-radius: 0px;
     padding: 15px 30px 15px 30px;
@@ -444,18 +478,18 @@ a {
 }
 
 .back-to-dashboard:hover {
-    background-color: #40df8d;
+    background-color: #6eab25;
 }
 
 .back-to-dashboard a {
-    color: #40df8d;
+    color: #6eab25;
     text-decoration: none;
     margin: 0px;
     font-weight: bold;
 }
 
 .back-to-dashboard a:hover {
-    color: #0c0c0c;
+    color: black;
 }
 
 /************** Curriculum Vitae **************/
@@ -509,7 +543,7 @@ a {
 
 /************** Footer <?php include('footer.php'); ?> **************/
 
-footer {
+footer p {
     text-align: center;
     padding: 20px;
     font-size: 15px;

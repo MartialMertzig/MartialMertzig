@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function handleCommand(command) {
-        // Ajoutez ici votre logique pour traiter la commande
-        // Exemple : Redirection vers la page d'accueil
+        // Traiter la commande
+        // Redirection vers la page d'accueil
         if (command.toLowerCase() === 'index') {
             window.location.href = 'index.html';
         } else {
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
             output.innerHTML += '<div>Commande inconnue, tapez "index" pour ouvrir la page.</div>';
         }
 
-        // Faites défiler automatiquement vers le bas pour afficher les nouvelles commandes
+        // Défiler automatiquement vers le bas pour afficher les nouvelles commandes
         output.scrollTop = output.scrollHeight;
     }
 });
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     const skillsSchema = document.getElementById('skills-schema');
 
-    // Définir vos compétences et chiffres associés
+    // compétences et chiffres associés
     const skillsData = [
         { name: 'HTML', number: 90 },
         { name: 'CSS', number: 85 },
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Ajoutez d'autres compétences ici
     ];
 
-    // Ajouter les cartes de compétences dans le schéma
+    // cartes de compétences dans le schéma
     skillsData.forEach((skill, index) => {
         const skillCard = document.createElement('div');
         skillCard.classList.add('skill-card');
@@ -55,10 +55,10 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     const faqItems = document.querySelectorAll('.faq-item');
 
-    // Ajoutez un gestionnaire d'événement à chaque question pour le volet déroulant
+    // gestionnaire d'événement à chaque question pour le volet déroulant
     faqItems.forEach((item) => {
         item.addEventListener('click', () => {
-            // Fermez tous les autres volets déroulants
+            // Ferme tous les autres volets déroulants
             faqItems.forEach((otherItem) => {
                 if (otherItem !== item) {
                     otherItem.classList.remove('opened');

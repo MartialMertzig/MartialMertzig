@@ -12,14 +12,7 @@
 </head>
 
 <body>
-    <div class="terminal">
-    <div class="logo-container-terminal">
+<div class="logo-container">
         <img src="<?php echo get_theme_file_uri() . '/assets/images/Logo.png'; ?> " alt="Votre Logo">
     </div>
-        <div class="background"></div>
-        <pre id="output">Bienvenue dans le terminal, veuillez vous identifier.</pre>
-        <input type="text" id="input" autofocus>
-    </div>
 </body>
-
-</html>

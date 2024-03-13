@@ -12,8 +12,13 @@
 
 <body>
     <div class="logo-container-projet">
-    <img src="assets/images/Logo-02-02-02-02-02.png" alt="Votre Logo">
+    <img src="assets/images/Logo.png" alt="Votre Logo">
     </div>
+
+    <div class="date-heure">
+    <h1>Mardi 12 mars 2024 | 14:35 | Planète Terre_</h1>
+    </div>
+
     <div class="project-page">
         <div class="project-details">
         <div class="titre-du-site">
@@ -37,7 +42,7 @@
         <div class="project-tech">
         <div class="titre-du-site">
         <img src="assets/images/Martial Mertzig - Portfolio - Lo-04.png" alt="Votre Logo">
-        <h2>Langages</h2>
+        <h2>Type</h2>
             </div>
             <div class="Logo-outils">
             <img src="assets/images/Martial Mertzig - Portfolio - Lo-04.png" alt="Votre Logo">
@@ -49,7 +54,7 @@
         <div class="project-links">
         <div class="titre-du-site">
         <img src="assets/images/Martial Mertzig - Portfolio - Lo-04.png" alt="Votre Logo">
-        <h2>Liens</h2>
+        <h2>Archives</h2>
             </div>
             <a href="#">Lien vers le projet</a>
             <a href="#">Lien vers le code source</a>
