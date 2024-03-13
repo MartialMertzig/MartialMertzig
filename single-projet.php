@@ -31,8 +31,11 @@ while (have_posts()) : the_post();
 
     <body>
 
+    <?php
+        date_default_timezone_set('Europe/Paris'); // Définir le fuseau horaire sur Paris
+        ?>
         <div class="date-heure">
-            <h1><?php echo date('l j F Y | H:i | \P\l\a\n\è\t\e\ \T\e\r\r\e_'); ?></h1>
+            <h1><?php echo date('l j F Y | H:i | \P\l\a\n\è\t\e\ \T\e\r\r\e'); ?></h1>
         </div>
 
         <div class="project-page">
@@ -93,8 +96,8 @@ while (have_posts()) : the_post();
                     <img src="<?php echo get_theme_file_uri('/assets/images/Martial Mertzig - Portfolio - Lo-04.png'); ?>" alt="Votre Logo">
                     <h2>Archives</h2>
                 </div>
-                <a href="#">Lien vers le projet</a>
-                <a href="#">Lien vers le code source</a>
+                <a href="https://github.com/">Lien vers le projet</a>
+                <a href="https://github.com/">Lien vers le code source</a>
             </div>
 
             <div class="dashboard-item contact-form">

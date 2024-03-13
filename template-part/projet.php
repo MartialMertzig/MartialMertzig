@@ -31,7 +31,7 @@ while (have_posts()) : the_post();
 
     <body>
 
-        <div class="date-heure">
+    <div class="date-heure">
             <h1><?php echo date('l j F Y | H:i | \P\l\a\n\è\t\e\ \T\e\r\r\e_'); ?></h1>
         </div>
 

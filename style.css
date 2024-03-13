@@ -10,14 +10,15 @@ Text Domain: MartialMertzig
 
 /*Utilisation des polices Google Font en local*/
 
-/* Nebula */
+
+/* Play */
 
 @font-face {
-    font-family: 'Nebula';
-    src: url('assets/fonts/Nebula-Regular.otf') format("truetype");
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins-Regular.ttf') format("truetype");
     font-display: swap;
     font-style: normal;
-    font-weight: 700; 
+    font-weight: normal; 
 }
 
 /* Play */
@@ -80,7 +81,7 @@ Text Domain: MartialMertzig
     font-family: 'Orbiton';
     src: url('assets/fonts/Orbitron-Regular.ttf') format("truetype");
     font-display: swap;
-    font-style: italic;
+    font-style: normal;
     font-weight: 700; 
 }
 

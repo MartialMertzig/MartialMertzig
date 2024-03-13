@@ -30,10 +30,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // compétences et chiffres associés
     const skillsData = [
-        { name: 'HTML', number: 90 },
-        { name: 'CSS', number: 85 },
-        { name: 'JavaScript', number: 80 },
-        { name: 'JavaScript', number: 80 },
+        { name: 'HTML', number: 85 },
+        { name: 'CSS', number: 80 },
+        { name: 'Python', number: 10 },
+        { name: 'JavaScript', number: 40 },
+        { name: 'PHP', number: 50 },
         // Ajoutez d'autres compétences ici
     ];
 
