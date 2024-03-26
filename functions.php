@@ -46,4 +46,3 @@ function custom_single_template($single) {
 }
 
 add_filter('single_template', 'custom_single_template');
-

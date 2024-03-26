@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
-
+<!-- Importe le style.css et le Header.php -->
 <style> <?php include ('style.css'); ?> </style>
-
+<?php include ('header.php'); ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,25 +10,29 @@
     <link rel="stylesheet" href="style.css">
     <script src="assets/js/script.js"></script>
 </head>
-
 <body>
-<div class="logo-container">
-        <img src="<?php echo get_theme_file_uri() . '/assets/images/Logo.png'; ?> " alt="Votre Logo">
-    </div>
-
-            <?php
-        date_default_timezone_set('Europe/Paris'); // Définir le fuseau horaire sur Paris
-        ?>
-        <div class="date-heure">
-            <h1><?php echo date('l j F Y | H:i | \P\l\a\n\è\t\e\ \T\e\r\r\e'); ?></h1>
+    <!-- Section Profil -->
+    <div class="dashboard-hello">
+        <div class="categorie-date-heure">
+            <P>| Portfolio</P>
+            <?php date_default_timezone_set('Europe/Paris'); // Définir le fuseau horaire sur Paris ?>
+            <P><?php echo date('l j F Y | H:i'); ?></P>
         </div>
-
-
+        <div class="welcome">
+            <h1>Bonjour, ravi de vous revoir.</h1>
+            <div class="bouton-cv">
+                <p>martialmertzig@outlook.com</p>
+                <p>(+33) 6 56 74 16 40</p>
+                <a href="<?php echo get_theme_file_uri() . '/assets/images/Martial Mertzig  - Curriculum Vitæ 2024.pdf'; ?> " target="_blank"> <input type="button" class="bouton" value="Télécharger mon CV"> </a>
+            </div>
+        </div>
+    </div>
+    <!--Secftion du Dashboard -->
     <div class="dashboard" id="sortable-container">
     <div class="dashboard-item site-title">
 
             <div class="titre-du-site">
-                <img src="<?php echo get_theme_file_uri() . '/assets/images/Martial Mertzig - Portfolio - Lo-04.png'; ?> " alt="Votre Logo">
+                <img src="<?php echo get_theme_file_uri() . '/assets/images/icon-Historique.png'; ?> " alt="Votre Logo">
                 <h2>Historique</h2>
             </div>
                     
@@ -41,8 +45,8 @@
                 <div class="dashboard-item portfolio">
 
                     <div class="titre-du-site">
-                <img src="<?php echo get_theme_file_uri() . '/assets/images/Martial Mertzig - Portfolio - Lo-04.png'; ?> " alt="Votre Logo">
-                <h2>Collecte</h2>
+                <img src="<?php echo get_theme_file_uri() . '/assets/images/icon-Projet.png'; ?> " alt="Votre Logo">
+                <h2>Projets</h2>
                     </div>
 
                     <div class="project">
@@ -52,7 +56,7 @@
             <?php
         $args = array(
             'post_type' => 'projets',
-            'posts_per_page' => 4,
+            'posts_per_page' => 10,
             'orderby' => 'date',
             'order' => 'ASC',
             'paged' => 1,
@@ -106,8 +110,8 @@
 
         <div class="dashboard-item skills">
             <div class="titre-du-site">
-        <img src="<?php echo get_theme_file_uri() . '/assets/images/Martial Mertzig - Portfolio - Lo-04.png'; ?> " alt="Votre Logo">
-        <h2>Données</h2>
+        <img src="<?php echo get_theme_file_uri() . '/assets/images/icon-Competences.png'; ?> " alt="Votre Logo">
+        <h2>Compétences</h2>
     </div>
             <div class="animated-schema" id="skills-schema">
                 <!-- Cartes de compétences seront ajoutées par JavaScript -->
@@ -116,8 +120,8 @@
 
         <div class="dashboard-item portfolio">
         <div class="titre-du-site">
-        <img src="<?php echo get_theme_file_uri() . '/assets/images/Martial Mertzig - Portfolio - Lo-04.png'; ?> " alt="Votre Logo">
-        <h2>Déstination</h2>
+        <img src="<?php echo get_theme_file_uri() . '/assets/images/Icon-Experiences.png'; ?> " alt="Votre Logo">
+        <h2>Expériences</h2>
     </div>
             <div class="experience">
                 <!-- <img src="projet1.jpg" alt="Projet 1 Image">  Ajout de l'image ici -->
@@ -164,7 +168,7 @@
 
         <div class="dashboard-item portfolio">
         <div class="titre-du-site">
-        <img src="<?php echo get_theme_file_uri() . '/assets/images/Martial Mertzig - Portfolio - Lo-04.png'; ?> " alt="Votre Logo">
+        <img src="<?php echo get_theme_file_uri() . '/assets/images/icon-Formations.png'; ?> " alt="Votre Logo">
         <h2>Formations</h2>
     </div>
 
@@ -179,7 +183,7 @@
             <div class="formations">
                 <!-- <img src="projet1.jpg" alt="Projet 1 Image">  Ajout de l'image ici -->
                 <div>
-                    <h3>Licence Designer-e en Communication Graphique éco-responsable Print</h3>
+                    <h3>Licence Designer-e Graphique éco-responsable Print</h3>
                     <p>2020 à 2021 - Campus Fonderie de l’Image, Bagnolet (93170)</p>
                 </div>
             </div>
@@ -187,7 +191,7 @@
             <div class="formations">
               <!-- <img src="projet1.jpg" alt="Projet 1 Image">  Ajout de l'image ici -->
               <div>
-                    <h3>BTS Design Graphique – option Communication et Médias numériques</h3>
+                    <h3>BTS Design Graphique communication et médias numériques</h3>
                     <p>2018 à 2020 - Campus Fonderie de l’Image, Bagnolet (93170)</p>
                 </div>
             </div>
@@ -204,7 +208,7 @@
                <!-- <img src="projet1.jpg" alt="Projet 1 Image">  Ajout de l'image ici -->
               <div>
                     <h3>Passerelle longue vers l’apprentissage</h3>
-                    <p>De Février 2017 à Juillet 2017 - Campus Fonderie de l’Image, Bagnolet (93170)</p>
+                    <p>Fév à Juil. 2017 - Campus Fonderie de l’Image, Bagnolet (93170)</p>
                 </div>
             </div>
             
@@ -213,8 +217,8 @@
 
         <div class="dashboard-item about">
         <div class="titre-du-site">
-        <img src="<?php echo get_theme_file_uri() . '/assets/images/Martial Mertzig - Portfolio - Lo-04.png'; ?> " alt="Votre Logo">
-        <h2>Informations</h2>
+        <img src="<?php echo get_theme_file_uri() . '/assets/images/icon-a-propos.png'; ?> " alt="Votre Logo">
+        <h2>A propos</h2>
     </div>
             <p>Pendant ma formation de développeur WordPress chez OpenClassrooms, j’ai acquis des compétences en CSS, PHP et JavaScript, 
                 essentielles pour personnaliser des sites WordPress. J’ai également appris les bases du référencement (SEO) pour améliorer 
@@ -224,33 +228,33 @@
 
         <div class="dashboard-item contact-form">
         <div class="titre-du-site">
-        <img src="<?php echo get_theme_file_uri() . '/assets/images/Martial Mertzig - Portfolio - Lo-04.png'; ?> " alt="Votre Logo">
-        <h2>Réseau galactique</h2>
+        <img src="<?php echo get_theme_file_uri() . '/assets/images/icon-contact.png'; ?> " alt="Votre Logo">
+        <h2>Contact</h2>
     </div>
-            <form action="#" method="post">
-            <p>Email: m.mertzig@welinkton.fr</p>
-            <p>Téléphone: (+33) 6.56.74.16.40</p>
-            <p>Adresse: Inconnue</p>
-            </form>
+    <div class="infos-contact">
+            <p>Email : <b>martialmertzig@outlook.com</b></p>
+            <p>Téléphone : <b>(+33) 6 56 74 16 40</b></p>
+            <p>Gif-sur-Yvette (91190)</p>
+        </form>
+    </div>
         </div>
 
         <div class="dashboard-item contact-form">
         <div class="titre-du-site">
-        <img src="<?php echo get_theme_file_uri() . '/assets/images/Martial Mertzig - Portfolio - Lo-04.png'; ?> " alt="Votre Logo">
+        <img src="<?php echo get_theme_file_uri() . '/assets/images/icon-centre-interet.png'; ?> " alt="Votre Logo">
         <h2>Centres d'interets</h2>
     </div>
-            <form action="#" method="post">
-            <p>La musique</p>
-            <p>Les jeux-vidéos</p>
-            <p>La Science-Fiction</p>
-            <p>...</p>
-            </form>
+            <div class="centres">
+            <p>Voyage : Brésil et Portugal</p>
+            <p>Cinéma : Science-Fiction</p>
+            <p>Musique : New Wave</p>
+    </div>
         </div>
 
         <div class="dashboard-item faq">
         <div class="titre-du-site">
-        <img src="<?php echo get_theme_file_uri() . '/assets/images/Martial Mertzig - Portfolio - Lo-04.png'; ?> " alt="Votre Logo">
-        <h2>Questions de l'équipage</h2>
+        <img src="<?php echo get_theme_file_uri() . '/assets/images/icon-faq.png'; ?> " alt="Votre Logo">
+        <h2>Foire aux questions</h2>
     </div>
             <div class="faq-item" id="question1">
                 <h3>Quels sont les différents types de sites web ?</h3>
@@ -275,12 +279,6 @@
 
         
     </div>
-
-    <footer>
-        <p>© 2024 Martial Mertzig tous droits réservés.</p>
-    </footer>
-
-    
+    <?php include ('footer.php'); ?>
 </body>
-
 </html>
